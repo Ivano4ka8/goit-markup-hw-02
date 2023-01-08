@@ -9,6 +9,7 @@
   --light-color: #f4f4fd;
   --modal-overlay-color: #2e2f42;
   --hero-background-color: #2e2f42;
+  --white-color: #ffffff;
 }
 .list {
   list-style: none;
@@ -22,12 +23,13 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
   color: var(--text-color);
+  background-color: var(--white-color);
+  font-size: 16px;
 }
 
 /* HEADER  */
 
 .header {
-  background-color: #ffffff;
 }
 .main-nav {
 }
@@ -36,43 +38,29 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-color);
 }
 
 .accent-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--primary-brand-color);
 }
 .header-list {
 }
 .header-item {
 }
-.header-link {
+.nav-link {
   font-weight: 500;
-  font-size: 16px;
   color: var(--dark-color);
 }
-.header-link:hover,
-.header-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   font-weight: 500;
-  font-size: 16px;
   color: var(--pressed-state-color);
 }
 
 .header-contacts {
-  font-style: normal;
-  font-size: 16px;
 }
 .contacts-list {
 }
@@ -80,6 +68,7 @@ body {
 }
 .contacts-link {
   color: var(--text-color);
+  font-style: normal;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -96,33 +85,23 @@ body {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .main-btn {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-brand-color);
-  color: #ffffff;
+  color: var(--white-color);
   font-weight: 500;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
 }
 .main-btn:hover,
 .main-btn:focus {
-  font-family: "Roboto", sans-serif;
   background: var(--pressed-state-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  cursor: pointer;
+  color: var(--white-color)
 }
 
 /* FEATURES */
@@ -145,21 +124,17 @@ body {
 }
 .features-item {
 }
-.features-secondly-title {
+.section-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
 }
-
-.features-description {
-  font-size: 16px;
-}
 /* ----- WHAT ARE WE DOING? ------- */
 
 .our-work {
 }
-.our-work-title {
+.section-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -176,32 +151,11 @@ body {
 .team {
   background-color: var(--light-color);
 }
-
-.team-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--dark-color);
-}
-
 .team-list {
 }
 .team-item {
 }
 .team-link {
-}
-.team-name {
-  color: var(--dark-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.team-job {
-  font-size: 16px;
-  text-align: center;
 }
 
 /* FOOTER */
@@ -215,27 +169,16 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-color);
 }
 
 .accent-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.16;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--primary-brand-color);
 }
 
 .footer-description {
-  font-size: 16px;
   color: var(--accent-color);
 }
 
@@ -257,12 +200,9 @@ body {
 }
 .filter-buttons:hover,
 .filter-buttons:focus {
-  font-family: "Roboto", sans-serif;
   background: var(--pressed-state-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--white-color);
 }
 /* --------PORTFOLIO EXAMPLES----------- */
 
@@ -273,15 +213,4 @@ body {
 .examples-item {
 }
 .examples-img {
-}
-.examples-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--dark-color);
-}
-
-.examples-description {
-  font-size: 16px;
-  color: var(--text-color);
 }
